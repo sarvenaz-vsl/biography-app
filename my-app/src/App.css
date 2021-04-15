@@ -1,0 +1,226 @@
+  .App{
+    float: none;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .Header{
+    background-color:rgb(231, 231, 231);
+    height: 110px;
+    padding: 10px;
+  }
+
+body {
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 0.875rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+    background-color: rgb(216, 216, 216);
+    float: none;
+    padding-top: 15px;
+    padding-inline-start: inherit;
+}
+
+.afterimg{
+  background-color: rgb(77, 77, 77);
+  width: 100%;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.BG {
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-image: url("./Components/AboutMeBG1B.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.contactBG{
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-image: url("./Components/Contact.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.TL{
+  position: relative;
+  /* Create the parallax scrolling effect */
+  background-image: url("./Components/timeline.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ResumeDL{
+  background-color: rgb(205, 209, 230);
+  border-radius: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-top: 40px;
+}
+
+  /* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .ResumeDL{
+      margin-left: 40px;
+      margin-right: 40px;
+      margin-top: 40px;
+    }
+  }
+
+.programmingSkills{
+  height: 70px;
+  width: 70px;
+}
+
+.contactImg{
+  height: 60px;
+  width: 60px;
+}
+
+.centeredAboveIcons{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media only screen and (max-device-width: 1024px){
+  .BG, .contactBG {
+    background-attachment: scroll;
+  }
+}
+
+.top-left {
+  position: absolute;
+  top: 30px;
+  padding-left: 60px;
+  padding-top: 40px;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+  Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: black;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  /* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .top-left{
+      top: 10px;
+      padding-top: 10px;
+    }
+  }
+
+  .SkillBar{
+    background-color: rgb(211, 222, 226);
+    border-radius: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+  }
+
+    /* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .SkillBar{
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 40px;
+      }
+    }
+
+  .skill{
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .hm{    
+    border-bottom: dotted black;
+  }
+
+  .phone{
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .tltext{
+    color: black;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .hmTL{    
+    color: black;
+    background-color: white;
+    
+  }
+
+  .DLbtn {
+    /* background-color: rgb(175, 175, 175); */
+    background-color: rgb(205, 209, 230);
+    border: none;
+    color: black;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid black;
+    border-width: 1.5px;
+  }
+  
+  /* Darker background on mouse-over */
+  .DLbtn:hover {
+    /* background-color: rgb(99, 99, 99); */
+    background-color: rgb(173, 173, 173);
+    border: none;
+    color: white;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .DLbtn{
+      font-size: 12px;
+      padding: 8px 20px;
+    }
+  }
+
+  .footer{
+    background-color: rgb(63, 63, 63);
+    color: white;
+  }

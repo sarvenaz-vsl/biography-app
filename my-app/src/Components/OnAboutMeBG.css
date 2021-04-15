@@ -1,0 +1,148 @@
+/* Create 2 unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    column-count: 1;
+  }
+
+
+  /* right column */
+  .column.sideA {
+    width: 40%;
+    background-color: white;
+    font-size: 15px;
+    word-break: keep-all;
+    animation: mymovebox 5s infinite;
+  }
+  
+  /* Middle column */
+  .column.middleA {
+    width: 60%;
+    padding-left: 40px;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+    word-break: keep-all;
+  }
+
+  .rowA{
+    font-family: sans-serif; 
+    column-gap: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .rowA:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.fakeimg {
+    background-color: #aaa;
+    max-width: 100%;
+    padding: 20px;
+    height: 280px;
+    width: 385px;  
+  }
+
+  @keyframes mymovebox {
+    50% {box-shadow: 10px 20px 30px black;}
+  }
+
+  @keyframes mymovename {
+    50% {
+        text-shadow: 30px 30px 30px black;
+    }
+  }
+
+  .name{
+    font-size: 15px;
+    text-align: center;
+    animation: mymovename 5s infinite;
+    word-break: keep-all;
+    font-weight: 700;
+  }
+
+  @keyframes mymovehello {
+    50% {
+        font-size: 40px;
+        font-family: cursive;
+        text-align: center;
+    }
+  }
+
+  .hello{
+    background-color: rgb(151, 151, 151);
+    width: 150px;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    font-family: cursive;
+    animation: mymovehello 5s;
+  }
+
+  @keyframes mymove {
+    50% {line-height: 30px;}
+   }
+
+  .AbouMeText{
+    line-height: 25px;
+    animation: mymove 5s 1;
+  }
+
+  @keyframes mymovehelloR {
+    50% {
+        font-size: 23px;
+        font-family: cursive;
+        text-align: center;
+    }
+  }
+  
+  @keyframes mymovenameR {
+    50% {
+        font-size: 16px;
+        text-align: center;
+    }
+  }
+
+  /* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.sideA{
+      width: 55%;
+      float: none;
+      font-size: 12px;    
+      border-radius: 10%;
+      animation: none;
+    }
+    .column.middleA{
+      width: 100%;
+      float: none;
+      height: auto;
+      border: none;
+      font-size: 13px;  
+      padding-left: 10px;
+    }
+    .fakeimg{
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        max-width: 100%;
+    }
+    .name{
+        font-size: 12px;
+        animation: mymovenameR 5s 1;
+        font-weight: normal;
+    }
+    .hello{
+        font-size: 17px;
+        width: 90px;
+        animation: mymovehelloR 5s 1;
+    }
+    .AbouMeText{
+        animation: none;
+        line-height: 20px;
+      }
+  }
+  
+

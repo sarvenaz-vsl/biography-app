@@ -1,0 +1,75 @@
+
+  
+  .skillResponsive {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    padding-left: 60px;
+    line-height: 14px;
+  }
+  
+  
+  .skills {
+    text-align: center;
+    color: white;
+  }
+  
+  .androidDev {
+    width: 65%;
+    background-color: black;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }
+  
+  .imageProcess {
+    width: 20%;
+    background-color: rgb(71, 71, 71);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }
+
+  .java {
+    width: 60%;
+    background-color: rgb(87, 87, 87);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }
+
+  .python {
+    width: 35%;
+    background-color: rgb(104, 104, 104);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }
+  
+  .SQL {
+    width: 80%;
+    background-color: rgb(138, 138, 138);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }  
+  
+  .git {
+    width: 90%;
+    background-color: rgb(167, 167, 167);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 10px;
+  }

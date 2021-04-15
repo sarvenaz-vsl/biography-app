@@ -1,0 +1,74 @@
+/* Create 2 unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+    column-count: 1;
+    
+  }
+  
+  /* right column */
+  .column.side {
+    width: 25%;
+    border-style: outset ;
+    border-color: rgb(238, 238, 238);
+    border-width: 2px;
+    background-color: rgb(219, 219, 219);
+    height: 500px;
+    font-size: 15px;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 70%;
+    padding-left: 20px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: rgb(238, 238, 238);
+    background-color: white;
+  }
+  
+  .row{
+    padding-right: 60px;
+    padding-left: 60px;
+    font-family: sans-serif; 
+    column-gap: 40px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the 2 columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side{
+      width: 100%;
+      float: none;
+      height: unset;
+      font-size: 12px;
+      
+    }
+    .column.middle{
+      width: 100%;
+      float: none;
+      height: auto;
+      border: none;
+      background-color: white;
+      font-size: 15px;
+  
+    }
+  }
+  
+  .title{
+    background-color: yellow;
+  }
+  
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+  }
+  
